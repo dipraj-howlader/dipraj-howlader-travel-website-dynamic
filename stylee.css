@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 10px; */
+    padding: 20px;
+    /* background-image: url("./images/travel-concept-with-landmarks.jpg"); */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  .nav-links li :hover {
+    background-color: #1b080e;
+    color: antiquewhite;
+      border-radius: 5px;
+      /* padding: 10px; */
+  }
+  
+  .nav-links li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .hero-image {
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #022350;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f1356d;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-out;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #f1467e;
+  }
+  
+  /* next section */
+  
+  .places-section {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .places-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .place-card {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+  
+  .place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .place-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .place-info {
+    padding: 20px;
+  }
+  
+  .place-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .place-info p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* .btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500
+  } */
+  .moreButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-middle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #307031;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-out;
+    text-decoration: none;
+  }
+  .btn-middle:hover{
+    background-color: #22b424;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* review section */
+  .review-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .reviews-heading {
+    font-size: 60px;
+    font-weight: 2.5em;
+    font-weight: bold;
+    color: #008080;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .review-card {
+    width: 23%;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .review-card img {
+    width: 100%;
+    height: 200px;
+  }
+  .review-card h3{
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .review-bar {
+    background-color: #f2f2f2;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  /* 
+  .review-progress {
+    background-color: #008080;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+  } */
+  
+  .review-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+  }
+  
+  
+  /* contact us */
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0dfb4;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .contact-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form textarea {
+    height: 50px;
+    width: 300px;
+  }
+  
+  .contact-form input[type="submit"] {
+    width: 250px;
+    background-color: #3619aa;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #006666;
+  }
+  .bottom-section {
+    background-color: #008080;
+    color: white;
+    padding: 50px;
+  }
+  
+  .bottom-section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .bottom-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .bottom-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  /* css
+   */
+  
+  * {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    display:none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  #show{
+    display: none;
+    text-align: center;
+    color:red;
+  }
+
+  /* submit form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  #userForm{
+    display: none;
+  }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dipraj Travel</title>
+ <link rel="stylesheet" href="./stylee.css">
+</head>
+
+<body>
+    <div  id="show">
+
+    </div>
+    <div id="userForm">
+      <form id="submit-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email1" name="email1" required>
+      
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+      
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+      
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select a country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Other">Other</option>
+        </select>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+    </div>
+  <div id="container">
+    <h1>Login</h1>
+    <form id="my-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <button id="login" type="submit">Login</button>
+    </form>
+  </div>
+  <div id="showClass">
+ <header>
+
+<nav>
+<div class="logo">
+<a href="#">Adventure.com</a>
+
+</div>
+<ul class="nav-links">
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Places</a></li>
+ <li><a href="/#review">Contact Us</a></li>
+</ul>
+  </nav>
+  <div class="hero-image">
+<img src="./images/travel-concept-with-landmarks.jpg" alt="">
+<div class="hero-content">
+ <h1>Best Travel Guide Website</h1>
+ <button" id="explore-now" class="btn">Explore Now</button>
+</div>
+  </div>
+  <!-- <div>
+    <h1>Here new Things</h1>
+  </div> -->
+ </header>
+ <section class="places-section">
+  <div class="places-container">
+<div class="place-card">
+ <div class="place-img">
+<img src="./images/1.jpg" alt="Place 1">
+ </div>
+ <div class="place-info">
+  <h2>Eiffel Tower, Paris</h2>
+  <p>The Eiffel Tower is an iconic Parisian landmark and one of the most visited attractions in the
+world. This wrought-iron tower stands at over 1,000 feet tall and offers stunning views of the
+city from its observation deck.</p>
+  <a href="#" class="btn">More Info</a>
+ </div>
+</div>
+<div class="place-card">
+ <div class="place-img">
+  <img src="./images/2.jpg" alt="Place 2">
+ </div>
+ <div class="place-info">
+  <h2>The Great Wall of China</h2>
+  <p>The Great Wall of China is a massive fortification built across northern China over 2,000 years
+ago. This architectural wonder spans over 13,000 miles and is one of the most visited tourist
+attractions in the world.</p>
+  <a href="#" class="btn">More Info</a>
+ </div>
+</div>
+<div class="place-card">
+ <div class="place-img">
+  <img src="./images/3.jpg" alt="Place 3">
+ </div>
+ <div class="place-info">
+  <h2>Machu Picchu, Peru</h2>
+  <p>Machu Picchu is an ancient Incan city located high in the Andes Mountains of Peru. This
+archaeological site is one of the most popular tourist destinations in South America, with
+visitors flocking to see its impressive stone buildings and breathtaking views. </p>
+  <a href="#" class="btn">More Info</a>
+ </div>
+</div>
+<div class="place-card">
+ <div class="place-img">
+  <img src="./images/4.jpg" alt="Place 3">
+ </div>
+ <div class="place-info">
+  <h2>Statue of Liberty, New York</h2>
+  <p>The Statue of Liberty is a symbol of freedom and democracy and one of the most iconic landmarks
+in the world. Located on Liberty Island in New York Harbor, this impressive statue attracts
+millions of visitors each year.</p>
+  <a href="#" class="btn">More Info</a>
+ </div>
+</div>
+<div class="place-card">
+ <div class="place-img">
+  <img src="./images/5.jpeg" alt="Place 3">
+ </div>
+ <div class="place-info">
+  <h2>Taj Mahal, India</h2>
+  <p>he Taj Mahal is an impressive mausoleum located in Agra, India. This stunning white marble
+building was built by the Mughal emperor Shah Jahan in memory of his beloved wife and is one of
+the most visited tourist attractions in India.. </p>
+  <a href="#" class="btn">More Info</a>
+ </div>
+</div>
+<div class="place-card">
+ <div class="place-img">
+  <img src="./images/6.jpg" alt="Place 3">
+ </div>
+ <div class="place-info">
+  <h2>The Colosseum, Rome</h2>
+  <p>The Colosseum is an iconic Roman landmark and one of the most recognizable symbols of ancient
+Rome. This amphitheater was used for gladiatorial contests and public spectacles and is now a
+popular tourist attraction. </p>
+  <a href="#" class="btn">More Info</a>
+ </div>
+</div>
+  </div>
+  <div class="moreButton">
+<div>
+ <a href="#" class="btn-middle">More Places</a>
+</div>
+  </div>
+
+ </section>
+
+ <!-- review section -->
+ <div>
+  <h2 class="reviews-heading">Reviews</h2>
+  <section class="review-section">
+<div class="review-card">
+ <img src="./images/male1.jpg" alt="Male 1">
+ <div class="review-bar">
+ </div>
+ <h3>Pau Grover</h3>
+ <p class="review-text">"I had a fantastic experience with this travel agency! The website was easy to
+  use and navigate, and the customer service was excellent. I was able to book my dream vacation
+  hassle-free, and everything was taken care of from start to finish. Highly recommend!"</p>
+</div>
+
+<div class="review-card">
+ <img src="./images/fe1.jpg" alt="Female 1">
+ <div class="review-bar">
+
+ </div>
+ <h3>Maria Meye</h3>
+ <p class="review-text">"I stumbled upon this travel agency website and was blown away by their
+  offerings. The site is well-organized, and the staff is knowledgeable and helpful. They went above
+  and beyond to ensure my trip was unforgettable. I can't wait to book with them again!"</p>
+</div>
+
+<div class="review-card">
+ <img src="./images/male2.jpg" alt="Male 2">
+ <div class="review-bar">
+ </div>
+ <h3>Jack Sparrow</h3>
+ <p class="review-text">"I am a frequent traveler and have used many travel agency websites in the past,
+  but this one stood out. The website is user-friendly, and the agents are responsive and
+  accommodating. They helped me plan my perfect getaway and exceeded my expectations. Highly
+  recommended!"</p>
+</div>
+
+<div class="review-card">
+ <img src="./images/fe2.jpg" alt="fe2">
+ <div class="review-bar">
+ </div>
+ <h3>Lina Avida</h3>
+ <p class="review-text">"Booking with this travel agency was a breeze! The website is easy to navigate,
+  and the prices were unbeatable. The agents were professional and friendly, and they made sure every
+  detail was taken care of. My trip was seamless, and I will definitely use them again in the future."
+ </p>
+</div>
+  </section>
+ </div>
+<!-- contact us -->
+
+ </div>
+ <script src="script.js"></script>
+</body>
+
+</html>
