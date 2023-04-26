@@ -14,7 +14,14 @@
     <div  id="show">
 
     </div>
+    <div>
+      <div id="button-container">
+        <button class="info-button" style="margin-right: 20px;">Give Info</button>
+        <button class="edit-button">Edit Info</button>
+      </div>
+    </div>
     <div id="userForm">
+
       <form id="submit-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -38,9 +45,26 @@
         </select>
       
         <button type="submit">Submit</button>
+        <h2 id="added">Added!</h2>
       </form>
-      
+
+    
     </div>
+    <div  id="data">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+  </div>
   <div id="container">
     <h1>Login</h1>
     <form id="my-form">

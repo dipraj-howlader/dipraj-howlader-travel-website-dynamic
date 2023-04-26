@@ -425,3 +425,63 @@
   #userForm{
     display: none;
   }
+
+  /* new  */
+  #button-container {
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    
+  }
+#data{
+  display: none;
+}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  thead {
+    background-color: #ccc;
+  }
+  
+  th, td {
+    padding:100px;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 768px) {
+    th, td {
+      display: block;
+    }
+  
+    th {
+      text-align: center;
+    }
+  
+    td {
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      display: inline-block;
+      font-weight: bold;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+  }
+  #added{
+    display: none;
+  }

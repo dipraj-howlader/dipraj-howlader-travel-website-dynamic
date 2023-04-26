@@ -7,7 +7,10 @@ const emailInput = document.getElementById('email'); // Get reference to the ema
 const passwordInput = document.getElementById('password');
 const show = document.getElementById('show');
 // new file code
-
+const infoButton = document.querySelector('.info-button');
+  const editButton = document.querySelector('.edit-button');
+  const datsShow = document.getElementById('data');
+const added = document.getElementById('added');
 const SubmitForm = document.querySelector('#submit-form');
 
 
@@ -27,6 +30,10 @@ SubmitForm.addEventListener('submit', (event) => {
   xhr.onload = function() {
     if (xhr.status === 200) {
       console.log(xhr.responseText);
+      added.style.display = 'block';
+      setTimeout(function() {
+        added.style.display = 'none';
+      }, 4000);
     }
   };
 
@@ -45,6 +52,11 @@ exploreButton.addEventListener('click', function() {
 // login.addEventListener('click', function(){
 //     longin.style.display = 'none';
 // } )
+
+
+
+const buttonContainer = document.getElementById("button-container");
+
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent the form from submitting
 
@@ -63,7 +75,10 @@ form.addEventListener('submit', (event) => {
             longin.style.display= 'none';
             show.style.display = 'none';
                      console.log("CONNECTED");
+                     buttonContainer.style.display='block';
+                     buttonContainer.style.display='flex';
                      userForm.style.display = 'block';
+                     datsShow.style.display='none';
           }
           else{
             console.log(xhr.readyState + " "+xhr.status);
@@ -85,3 +100,68 @@ form.addEventListener('submit', (event) => {
 
 
 });
+
+
+
+  // Add a click event listener to the infoButton
+  infoButton.addEventListener('click', function() {
+    console.log('Info button clicked');
+    userForm.style.display = 'block';
+    datsShow.style.display = 'none';
+    // Add your code here to perform an action when the infoButton is clicked
+  });
+
+  // Add a click event listener to the editButton
+  editButton.addEventListener('click', function() {
+    console.log('Edit button clicked');
+    userForm.style.display = 'none';
+    datsShow.style.display='block';
+    // Add your code here to perform an action when the editButton is clicked
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'getData.php', true);
+    xhr.responseType = 'json';
+    xhr.send();
+
+    // Handle the response when it comes back
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        // Retrieve the JSON data from the response
+        var data = xhr.response;
+
+        // Get the table body element where we will display the data
+        var tableBody = document.getElementById('data');
+
+        // Loop through the data and create a new row for each record
+        for (var i = 0; i < data.length; i++) {
+          // Create a new row element
+          var row = document.createElement('tr');
+
+          // Create a cell for each column and add the data to the cell
+          var nameCell = document.createElement('td');
+          nameCell.textContent = data[i].name;
+          row.appendChild(nameCell);
+
+          var emailCell = document.createElement('td');
+          emailCell.textContent = data[i].email;
+          row.appendChild(emailCell);
+
+          var phoneCell = document.createElement('td');
+          phoneCell.textContent = data[i].phone;
+          row.appendChild(phoneCell);
+
+          var addressCell = document.createElement('td');
+          addressCell.textContent = data[i].address;
+          row.appendChild(addressCell);
+
+          var countryCell = document.createElement('td');
+          countryCell.textContent = data[i].country;
+          row.appendChild(countryCell);
+
+          // Add the new row to the table body
+          tableBody.appendChild(row);
+        }
+      }
+    };
+  });
+
+
